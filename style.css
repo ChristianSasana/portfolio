@@ -1,0 +1,385 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+body {
+    margin: 0;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+
+.navbar a {
+    padding-right: 50px;
+}
+
+.btn-hover {
+    background-color: white;
+    color: #000;
+    transition: 0.5 ease;
+}
+
+.btn-hover:hover{
+    background-color: #000;
+    color: white;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    font-size: 2rem;
+    align-items: end;
+    padding: 10px 25px;
+}
+
+.hamburger-list{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: end;
+    font-size: 1.5rem;
+    gap: 5px;
+    list-style: none;
+}
+
+.address p {
+    display: inline-block;
+    margin: 0;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    text-decoration: none;
+    list-style: none; 
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0px 250px;
+    font-size: 6rem;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: auto;
+    padding: 50px;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 20px 20px 10px grey;
+}
+
+.home-container > p {
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+.home-container > h1 {
+    font-size: 4.5rem;
+}
+
+.home-container h6 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.btn-wrapper {
+    position: relative;
+    display: inline-flex;
+}
+
+.open-to-work {
+    width: fit-content;
+    padding: 3px;
+    margin-top: 5px;
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 1rem;
+    border: 1px solid black;
+    animation: blink 3s ease infinite;
+}
+
+@keyframes blink{
+    0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.copyEmail {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    margin: 5px 10px; 
+    opacity: 0;
+    transition: opacity 280ms ease-out;
+}
+
+.open-to-work:hover .copyEmail{
+    opacity: 1;
+    visibility: visible; 
+} 
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0px 150px;
+    font-size: 1rem;
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top: 2px solid;
+    border-image: linear-gradient(to left, #000 50%, transparent 50%) 100% 1;
+}
+
+.projects-container {
+    display: flex;
+    width: 95%;
+    flex: 1;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 30px 0px;
+}
+
+.desc-container {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: start;
+}
+
+.project-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title p {
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.project-icons {
+    display: flex;
+    gap: 1rem;
+}
+.title-icons {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.img-container > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 50px;
+    padding: 100px;
+}
+
+.skills-container {
+  border: 1px solid #c3c3c3;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.container {
+    font-size: 24px;
+    padding: 20px;
+    border: 1px solid black;
+    width: 30%;
+} 
+
+.skills {
+    display: flex;
+    padding: 50px 0px 0px;
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, #000 50%, transparent 50%) 100% 1;
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 1rem;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 7rem;
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+.lang h1{
+    font-size: 1.2rem;
+}
+
+.lang-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5rem;
+    padding: 1rem 0rem;
+    flex: 1;
+}
+
+.icons > p {
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+.icons i {
+    color: #4049cc;
+}
+
+.footer {
+    background-color: rgba(64, 73, 204);
+    color: rgba(239, 227, 175);
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 0px 0px 0px;
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+.links {
+    font-size: 3rem;
+    width: 40%;
+}
+
+.footer > h2 {
+    font-size: 1.5rem;
+}
+
+.nav {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 1440px) {
+    html {
+    font-size: 14px;
+    }
+    .home-container {
+    padding: 45px;
+    }
+    .home-container h1 {
+    font-size: 3rem;
+    }
+    h6 {
+    font-size: 1.2rem;
+    }
+    .projects {
+    padding: 100px 0px 100pxd;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+    font-size: 12px;
+    }
+    .nav-list {
+        justify-content: space-around;
+        width: 55%;
+        padding-left: 5px;
+    }
+    .nav-list  li{
+        font-size: 1rem;
+        width: 25%;
+    }
+    .address {
+        font-size: .9rem;
+    }
+    .projects {
+        padding: 100px 0px 100pxd;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+    font-size: 12px;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    .navbar {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .home-container h1 {
+        font-size: 2.5rem;
+    }
+    .home-container h6 {
+        font-size: 1.3rem;
+    }
+    .projects-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .desc-container {
+        width: 80%;
+    }
+    .img-container {
+        width: 80%;
+    }
+    .icons p{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Sasana</title>
+    <link rel="icon" type="image/icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="https://cdn.viconic.dev/js/copyicons-smart-loader.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="address">
+            <i class="fa-solid fa-house"></i>
+            <p>Santa Rosa, Laguna 4026</p>
+        </div>
+        <ul class="nav-list">
+            <li class="btn-hover"><a href="#home">Home</a></li>
+            <li class="btn-hover"><a href="#skills"> Skills</a></li>
+            <li class="btn-hover"><a href="#projects">Projects</a></li>
+            <li class="btn-hover"><a href="#links">Links</a></li>
+        </ul>
+    </div>
+    <div class="hamburger-menu">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        <ul class="hamburger-list" id="hamburgerList">
+            <li class="btn-hover"><a href="#home">Home</a></li>
+            <li class="btn-hover"><a href="#skills"> Skills</a></li>
+            <li class="btn-hover"><a href="#projects">Projects</a></li>
+            <li class="btn-hover"><a href="#links">Links</a></li>
+        </ul>
+    </div>
+    <div class="home" id="home">
+        <div class="home-container">
+            <p>
+                Hello, I'm
+            </p>
+            <h1>
+                Christian Sasana
+            </h1>
+            <h6>
+                Software Developer |
+                <a href="ChristianSasana_Resume.pdf" target="_blank">
+                    <i class="fa-regular fa-file" style="color: #000;"></i>
+                    Resume
+                </a>
+            </h6>
+            <div class="btn-wrapper">
+                <button class="open-to-work" onclick="copyEmail()" onmouseout="mouseOut()">
+                    <span class="copyEmail" id="copyEmail">Copy Email</span>
+                    <i class="fa-solid fa-envelope"></i>
+                    Open to Work
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <h1>Project</h1>
+        <div class="projects-container">
+            <div class="desc-container">
+                <div class="project-title">
+                    <p>Medipaws (Back-End)</p>
+                    <div class="project-icons">
+                        <div class="title-icons">
+                            <i class="fa-brands fa-laravel"></i>
+                            Laravel
+                        </div>
+                        <div class="title-icons">
+                            <i class="devicon-mysql-original colored"></i>
+                            MySQL
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Veterinary Clinic System with an Inventory, Appointment and Record management System.
+                </p>
+                <p>
+                    Developed the back-end system using MySQL and Laravel Framework, integrating secure
+                    CRUD operations and relational data handling for medical records, client profiles, and
+                    stock management.
+                </p>
+            </div>
+            <div class="img-container">
+                <img alt="medipaws website" src="projects1.png">
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <h1>Skills</h1>
+    </div>
+    <div class="lang">
+        <h1>Front-End</h1>
+        <div class="lang-container">
+            <div class="icons">
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-css"></i>
+                <p>CSS</p>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-bootstrap"></i>
+                <p>Bootstrap</p>
+            </div>
+        </div>
+        <h1>Back-End</h1>
+        <div class="lang-container">
+            <div class="icons">
+                <i class="fa-brands fa-laravel"></i>
+                <p>Laravel</p>
+            </div>
+            <div class="icons">
+                <i class="devicon-mysql-original"></i>
+                <p>MySQL</p>
+            </div>
+            <div class="icons">
+                <i class="devicon-cplusplus-plain"></i>
+                <p>C++</p>
+            </div>
+            <div class="icons">
+                <i class="devicon-java-plain"></i>
+                <p>Java</p>
+            </div>
+        </div>
+        <h1>Tools and Platforms</h1>
+        <div class="lang-container">
+            <div class="icons">
+                <i class="fa-brands fa-wordpress"></i>
+                <p>WordPress</p>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-square-figma"></i>
+                <p>Figma</p>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-square-github"></i>
+                <p>Github</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="links">
+        <div class="links">
+            <a href="https://boxd.it/bm8bb" target="_blank">
+                <i class="fa-brands fa-square-letterboxd" href="https://boxd.it/bm8bb"></i>
+            </a>
+            <a href="https://github.com/ChristianSasana">
+                <i class="fa-brands fa-square-github""></i>
+            </a>
+            <a href=" mailto:christianangelofsasana@gmail.com" class="email-link">
+                    <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/christian-angelo-sasana-7583562aa" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <div>
+            <h2> &copy 2026 Christian Sasana</h2>
+        </div>
+    </div>
+    <div class="footer nav">
+        <a href="#home">Home</a>
+        <p>|</p>
+        <a href="#skills"> Skills</a>
+        <p>|</p>
+        <a href="#projects">Projects</a>
+        <p>|</p>
+        <a href="#links">Links</a>
+    </div>
+    <script>
+        function copyEmail() {
+            navigator.clipboard.writeText("christianangelofsasana@gmail.com");
+
+            var tooltip = document.getElementById("copyEmail");
+            tooltip.innerHTML = "Email Copied";
+        }
+
+        function mouseOut() {
+            var tooltip = document.getElementById("copyEmail");
+            tooltip.innerHTML = "Copy Email";
+
+        }
+
+        function toggleMenu() {
+            var toggle = document.getElementById("hamburgerList");
+            if (toggle.style.display === "block") {
+                toggle.style.display = 'none';
+            } else {
+                toggle.style.display = 'block';
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
